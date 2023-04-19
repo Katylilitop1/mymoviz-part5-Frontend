@@ -37,7 +37,7 @@ function Home() {
 const [moviesData, setMoviesData] = useState([])
 
 useEffect(() => {
-  fetch('mymoviz-part5-backend-sigma.vercel.app')
+  fetch('https://mymoviz-part5-backend-sigma.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       const formatedData = data.movies.map(movie => {
